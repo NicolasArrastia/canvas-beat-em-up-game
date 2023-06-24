@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+      body {
+        background-color: #222;
+        margin: 0;
+        padding: 0;
+      }
+      canvas {
+        border: 1px solid white;
+        image-rendering: pixelated;
+        transform: scale(4) translate(50%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: none">
+      <img
+        id="playerFrames"
+        src="assets/Sprite Sheets/SwordFighter/SwordFighter_ShortHair_Blue1.png"
+        alt="player"
+      />
+      <img
+        id="enemyAxeKnightFrames"
+        src="assets/Sprite Sheets/LanceKnight/LanceKnight_Red.png"
+        alt="player"
+      />
+      <img src="assets/Tiles/FullTileset.png" alt="tileset" id="tileset" />
+      <img
+        src="assets/UI Elements/MovementArrows.png"
+        alt="arrows"
+        id="arrows"
+      />
+      <img
+        src="assets/UI%20Elements/RangerFinderTile_Blue_50%25Opacity.png"
+        alt="arrows"
+        id="blueTiles50"
+      />
+    </div>
+
+    <canvas id="canvas" width="128" height="128"></canvas>
+
+    <script src="js/index.js" type="module"></script>
+    <script src="js/classes/player.js" type="module"></script>
+  </body>
+</html>
