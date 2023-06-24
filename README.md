@@ -1,6 +1,6 @@
 # Canvas Beat em Up Game
 
-In this project I made my first game made with javascript using the canvas tag of html
+In this project I made my first game made with vanilla javascript using the canvas API
 
 ## Controlls
 WASD/Arrows: Movement
