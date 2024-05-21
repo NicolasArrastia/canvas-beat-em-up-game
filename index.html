@@ -13,17 +13,34 @@
     />
 
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
       body {
         background-color: #222;
-        margin: 0;
-        padding: 0;
+      }
+
+      main {
+        height: 100vh;
+        color: #ccc;
+
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-items: center;
+      }
+
+      li {
+        list-style: none;
       }
       canvas {
-        border: 1px solid white;
+        display: block;
         image-rendering: pixelated;
-        transform: scale(4) translate(50%, 50%);
+        transform: scale(3);
       }
+
     </style>
   </head>
   <body>
@@ -51,7 +68,15 @@
       />
     </div>
 
-    <canvas id="canvas" width="128" height="128"></canvas>
+    <main>
+      <div>
+        <canvas id="canvas" width="128" height="128"></canvas>
+      </div>
+      <ul>
+        <li>WASD: Movement</li>
+        <li>Enter: Attack</li>
+      </ul>
+    </main>
 
     <script src="js/index.js" type="module"></script>
     <script src="js/classes/player.js" type="module"></script>
